@@ -11,58 +11,68 @@
     <div class="page__wrapper">
 
       <header class="header">
-        <div class="header__top-bar">
-          <a href="#" class="header__city-button">Москва</a>
-          <nav class="header__nav">
-            <ul class="site-list">
-              <li class="site-list__item">
-                <a href="" class="site-list__link">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a href="" class="site-list__link">О компании</a>
-              </li>
-              <li class="site-list__item">
-                <a href="" class="site-list__link">Автопарк</a>
-              </li>
-              <li class="site-list__item">
-                <a href="" class="site-list__link">Отзывы</a>
-              </li>
-              <li class="site-list__item">
-                <a href="" class="site-list__link">Блог</a>
-              </li>
-              <li class="site-list__item">
-                <a href="" class="site-list__link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <p class="header__schedule">
-            Пн-Вс, с 10:00 до 19:00
-          </p>
+        <div class="header__top-wrapper">
+          <div class="header__top-bar">
+            <p class="header__link-wrapper">
+              <a href="#" class="header__city-link">Москва</a>
+            </p>
+            <nav class="header__nav">
+              <ul class="site-list">
+                <li class="site-list__item">
+                  <a href="" class="site-list__link">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="" class="site-list__link">О компании</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="" class="site-list__link">Автопарк</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="" class="site-list__link">Отзывы</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="" class="site-list__link">Блог</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="" class="site-list__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__column">
+              <p class="header__schedule">
+                Пн-Вс, с 10:00 до 19:00
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="header__bottom-bar">
-          <p class="header__logo">
-            <img src="img/magnum.svg" class="header__logo-image" width="234" height="53" alt="Логотип компании Магнум">
-          </p>
-          <p class="header__description">
-            Грузоперевозки от экспертов логистики
-          </p>
-          <ul class="header__list social-list">
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">Facebook</a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">Twitter</a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">Pinterest</a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link">In</a>
-            </li>
-          </ul>
-          <div class="header__contact">
-            <span class="header__number">+7 (495) 579-80-79</span>
-            <button class="header__call-button">Обратный звонок</button>
+        <div class="header__bottom-wrapper">
+          <div class="header__bottom-bar">
+            <p class="header__logo">
+              <img src="img/magnum.png" class="header__logo-image" width="234" height="53" alt="Логотип компании Магнум">
+            </p>
+            <div class="header__column">
+              <p class="header__description">Грузоперевозки от<br> экспертов логистики</p>
+            </div>
+            <div class="header__column">
+              <ul class="header__list social-list">
+                <li class="social-list__item">
+                  <a href="#" class="social-list__link social-list__link--facebook">Facebook</a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#" class="social-list__link social-list__link--twitter">Twitter</a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#" class="social-list__link social-list__link--pinterest">Pinterest</a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#" class="social-list__link social-list__link--linkedin">In</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__contact">
+              <span class="header__number">+7 (495) 579-80-79</span>
+              <button class="header__call-button button">Обратный звонок</button>
+            </div>
           </div>
         </div>
       </header>
@@ -98,19 +108,21 @@
             </ul>
           </div>
           <div class="delivery__wrapper">
-            <h2 class="delivery__title">Грузоперевозки по России</h2>
-            <p class="delivery__info">Мы доставим ваш груз в любой город России. С нами надежно!</p>
-            <div class="delivery__calculator">
-              <label for="" class="delivery__input-wrapper">
-                <input type="text" class="delivery__input" name="From" placeholder="Откуда">
-              </label>
-              <label for="" class="delivery__input-wrapper">
-                <input type="text" class="delivery__input" name="To" placeholder="Куда">
-              </label>
-              <label for="" class="delivery__input-wrapper">
-                <input type="text" class="delivery__input" name="Weight" placeholder="Вес груза">
-              </label>
-              <button class="delivery__button">Рассчитать</button>
+            <div class="delivery__content">
+              <h2 class="delivery__title">Грузоперевозки по России</h2>
+              <p class="delivery__info">Мы доставим ваш груз в любой город России. С нами надежно!</p>
+              <div class="delivery__calculator">
+                <label for="" class="delivery__input-wrapper">
+                  <input type="text" class="delivery__input" name="From" placeholder="Откуда">
+                </label>
+                <label for="" class="delivery__input-wrapper">
+                  <input type="text" class="delivery__input" name="To" placeholder="Куда">
+                </label>
+                <label for="" class="delivery__input-wrapper">
+                  <input type="text" class="delivery__input" name="Weight" placeholder="Вес груза">
+                </label>
+                <button class="delivery__button button">Рассчитать</button>
+              </div>
             </div>
           </div>
         </section>
@@ -118,76 +130,78 @@
         <section class="features">
           <h2 class="visually-hidden">Преимущества компании</h2>
           <ul class="features__list">
-            <li class="features__item">
-              <h3 class="features__name">Персональный менеджер</h3>
+            <li class="features__item features__item--manager">
+              <h3 class="features__name">Персональный<br> менеджер</h3>
               <p class="features__description">Предоставляем персонального менеджера 24 часа/7 дней</p>
             </li>
-            <li class="features__item">
-              <h3 class="features__name">Постоянное отслеживание грузов</h3>
+            <li class="features__item features__item--loup">
+              <h3 class="features__name">Постоянное<br> отслеживание грузов</h3>
               <p class="features__description">Предоставляем персонального менеджера 24 часа/7 дней</p>
             </li>
-            <li class="features__item">
-              <h3 class="features__name">Доставка в дальние регионы</h3>
+            <li class="features__item features__item--mark">
+              <h3 class="features__name">Доставка в<br> дальние регионы</h3>
               <p class="features__description">Предоставляем персонального менеджера 24 часа/7 дней</p>
             </li>
-            <li class="features__item">
-              <h3 class="features__name">Полная страховка сохранности грузов</h3>
+            <li class="features__item features__item--box">
+              <h3 class="features__name">Полная страховка<br> сохранности грузов</h3>
               <p class="features__description">Предоставляем персонального менеджера 24 часа/7 дней</p>
             </li>
           </ul>
         </section>
 
         <section class="about">
-          <h2 class="about__title">Полный комплекс логистических услуг</h2>
-          <b class="about__caption">Короткий текст примерно на две строки о том какая хорошая и надежная компания</b>
-          <p class="about__image">
-            <img src="img/about-truck.jpg" width="300" height="300" alt="Грузовой автомобиль компании Магнум">
-          </p>
-          <div class="about__services services">
-            <p class="services__description">
-              Располагая собственным парком грузовых автомобилей и имея надежных проверенных партнеров наша компания может предложить и обеспечить оптимальный вариант доставки грузов и его своевременное и качественное выполнение
+          <div class="about__content">
+            <h2 class="about__title">Полный комплекс логистических услуг</h2>
+            <b class="about__caption">Короткий текст примерно на две строки о том какая хорошая и<br> надежная компания</b>
+            <p class="about__image">
+              <img src="img/about-truck.jpg" width="300" height="300" alt="Грузовой автомобиль компании Магнум">
             </p>
-            <ul class="services__list">
-              <li class="servises__item">
-                <a href="" class="services__link">Погрузка-Разгрузка</a>
-              </li>
-              <li class="servises__item">
-                <a href="" class="services__link">Экспедирование</a>
-              </li>
-              <li class="servises__item">
-                <a href="" class="services__link">Охрана</a>
-              </li>
-              <li class="servises__item">
-                <a href="" class="services__link">Страхование</a>
-              </li>
-              <li class="servises__item">
-                <a href="" class="services__link">Хранение</a>
-              </li>
-              <li class="servises__item">
-                <a href="" class="services__link">Составление сложных маршрутов</a>
-              </li>
-              <li class="servises__item">
-                <a href="" class="services__link">Расчет логистики</a>
-              </li>
-            </ul>
-            <a href="#" class="services__button button">Подробнее</a>
-          </div>
-          <div class="about__facts">
-            <div class="about__fact">
-              <b class="about__fact-indicator">2000</b>
-              <p class="about__fact-description">Клиентов работаютс нами постоянно</p>
+            <div class="about__services services">
+              <p class="services__description">
+                Располагая собственным парком грузовых автомобилей и имея надежных проверенных партнеров наша компания может предложить и обеспечить оптимальный вариант доставки грузов и его своевременное и качественное выполнение
+              </p>
+              <ul class="services__list">
+                <li class="servises__item">
+                  <a href="" class="services__link">Погрузка-Разгрузка</a>
+                </li>
+                <li class="servises__item">
+                  <a href="" class="services__link">Хранение</a>
+                </li>
+                <li class="servises__item">
+                  <a href="" class="services__link">Экспедирование</a>
+                </li>
+                <li class="servises__item">
+                  <a href="" class="services__link">Составление сложных маршрутов</a>
+                </li>
+                <li class="servises__item">
+                  <a href="" class="services__link">Охрана</a>
+                </li>
+                <li class="servises__item">
+                  <a href="" class="services__link">Расчет логистики</a>
+                </li>
+                <li class="servises__item">
+                  <a href="" class="services__link">Страхование</a>
+                </li>
+              </ul>
+              <a href="#" class="services__button button">Подробнее</a>
             </div>
-            <div class="about__fact">
-              <b class="about__fact-indicator">15 <span>лет</span></b>
-              <p class="about__fact-description">Лет опыта в сфере первозок</p>
-            </div>
-            <div class="about__fact">
-              <b class="about__fact-indicator">300</b>
-              <p class="about__fact-description">Водителей со стажем более 15 лет</p>
-            </div>
-            <div class="about__fact">
-              <b class="about__fact-indicator">275</b>
-              <p class="about__fact-description">Единиц техники в собственном автопарке</p>
+            <div class="about__facts">
+              <div class="about__fact">
+                <b class="about__fact-indicator">2000</b>
+                <p class="about__fact-description">Клиентов работаютс нами постоянно</p>
+              </div>
+              <div class="about__fact">
+                <b class="about__fact-indicator">15<span>лет</span></b>
+                <p class="about__fact-description">Лет опыта в сфере первозок</p>
+              </div>
+              <div class="about__fact">
+                <b class="about__fact-indicator">300</b>
+                <p class="about__fact-description">Водителей со стажем более 15 лет</p>
+              </div>
+              <div class="about__fact">
+                <b class="about__fact-indicator">275</b>
+                <p class="about__fact-description">Единиц техники в собственном автопарке</p>
+              </div>
             </div>
           </div>
         </section>
@@ -197,7 +211,7 @@
           <b class="map__caption">Короткий текст примерно на две строки о том какая хорошая и надежная компания</b>
           <div class="map__wrapper">
             <img class="map__image" src="img/map.svg" width="1396" height="499" alt="Карта направлений доставки">
-            <use class="map__marker">
+            <!-- <use class="map__marker">
               <svg></svg>
             </use>
             <use class="map__marker">
@@ -289,7 +303,7 @@
             </use>
             <use class="map__marker">
               <svg></svg>
-            </use>
+            </use> -->
           </div>
         </section>
 

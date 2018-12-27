@@ -1,0 +1,20 @@
+.site-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+.site-list__item {
+  margin-right: 34px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.site-list__link {
+  color: #666666;
+}

@@ -1,0 +1,53 @@
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 7px 13px 15px 109px;
+
+  font-family: $opensans;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.services__description {
+  margin: 0 0 17px;
+
+  word-spacing: 1.2px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 17px;
+  padding: 0;
+
+  font-size: 15px;
+}
+
+.servises__item {
+  width: 57%;
+  margin-bottom: 8px;
+  padding: 0 0 0 29px;
+
+  background-image: url("../img/icon-blue-mark.png");
+  background-repeat: no-repeat;
+  background-position: left 5px;
+
+  &:nth-child(2n - 1) {
+    width: 43%;
+  }
+}
+
+.services__link {
+  color: #0099cc;
+
+  border-bottom: 1px solid #0099cc;
+}
+
+.services__button {
+  padding: 7px 27px 4px;
+
+  font-size: 16px;
+}

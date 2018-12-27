@@ -1,0 +1,75 @@
+.about {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about__content {
+  padding: 42px 90px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: $min-width;
+}
+
+.about__title {
+  width: 100%;
+  margin: 0 0 38px;
+
+  font-family: $gotham;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: center;
+}
+
+.about__caption {
+  display: block;
+  width: 100%;
+  margin-bottom: 42px;
+
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.about__image {
+  margin: 0 0 0 10px;
+
+  border-radius: 50%;
+}
+
+.about__services {
+  width: 69%;
+  margin-bottom: 40px;
+}
+
+.about__facts {
+  display: flex;
+  width: 100%;
+  padding: 36px 10px 30px;
+}
+
+.about__fact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 206px;
+  margin-right: 30px;
+}
+
+.about__fact-indicator {
+  font-family: $lato;
+  font-size: 56px;
+  line-height: 60px;
+  color: $extra-color;
+
+  span {
+    font-size: 29px;
+  }
+}
+
+.about__fact-description {
+  margin: 0;
+}

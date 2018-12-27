@@ -1,0 +1,57 @@
+.features {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  background-color: #ffffff;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.04);
+}
+
+.features__list {
+  display: flex;
+  width: $min-width;
+  margin: 0;
+  padding: 31px 14px;
+}
+
+.features__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 25%;
+  padding: 96px 15px 12px;
+
+  background-repeat: no-repeat;
+  background-position: top;
+
+  &--manager {
+    background-image: url("../img/icon-manager.png");
+  }
+
+  &--loup {
+    background-image: url("../img/icon-loup.png");
+  }
+
+  &--mark {
+    background-image: url("../img/icon-mark.png");
+  }
+
+  &--box {
+    background-image: url("../img/icon-box.png");
+  }
+}
+
+.features__name {
+  margin: 0 0 15px;
+
+  font-size: 20px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.features__description {
+  margin: 0;
+
+  text-align: center;
+}
