@@ -1,0 +1,113 @@
+.workflow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  background-image: url("../img/bg-workflow.png");
+}
+
+.workflow__content {
+  width: $min-width;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 48px 30px 96px;
+
+  color: #ffffff;
+}
+
+.workflow__title {
+  position: relative;
+
+  width: 100%;
+  margin: 0 0 38px;
+
+  font-family: $gotham;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: center;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: -29px;
+    left: 50%;
+
+    width: 164px;
+    height: 17px;
+
+    background-image: url("../img/icon-wheel-white.png");
+    background-repeat: no-repeat;
+
+    transform: translateX(-50%);
+  }
+}
+
+.workflow__caption {
+  display: block;
+  width: 100%;
+  margin-bottom: 42px;
+
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.workflow__steps-list {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 237px;
+  margin: 0;
+  padding: 19px 60px 10px;
+
+  background-image: url("../img/line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.workflow__step {
+  width: 163px;
+  align-self: flex-start;
+  margin-right: 29px;
+  padding: 124px 0 0;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  &:nth-child(2n-1) {
+    align-self: flex-end;
+    padding-top: 110px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--first {
+    background-image: url("../img/icon-pin-1.png");
+  }
+
+  &--second {
+    background-image: url("../img/icon-pin-2.png");
+  }
+
+  &--third {
+    background-image: url("../img/icon-pin-3.png");
+  }
+
+  &--forth {
+    background-image: url("../img/icon-pin-4.png");
+  }
+
+  &--fifth {
+    background-image: url("../img/icon-pin-5.png");
+  }
+}

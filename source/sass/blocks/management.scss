@@ -1,0 +1,48 @@
+.management {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.management__content {
+  display: flex;
+  justify-content: flex-start;
+  width: $min-width;
+  padding: 62px 104px 58px;
+}
+
+.management__portrait {
+  width: 326px;
+  margin: 0 50px 0 0;
+}
+
+.management__portrait-image {
+  margin: 0 0 19px;
+
+  img {
+    display: block;
+  }
+}
+
+.management__portrait-caption {
+  width: 100%;
+
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+
+  span {
+    display: block;
+    width: 100%;
+    margin-bottom: 7px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+  }
+}
+
+.management__appeal {
+  width: 576px;
+}

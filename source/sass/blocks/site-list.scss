@@ -17,4 +17,11 @@
 
 .site-list__link {
   color: #666666;
+
+  transition: all 0.1s ease-in;
+
+  &:hover,
+  &:focus {
+    color: #009cff;
+  }
 }

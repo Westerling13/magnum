@@ -25,7 +25,7 @@ gulp.task("style", function() {
     .pipe(gulp.dest("source/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -62,7 +62,8 @@ gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/js/*.js",
-    "source/img/*"
+    "source/img/*",
+    "source/*.html"
   ], {
     base: "source"
   })
@@ -78,7 +79,6 @@ gulp.task("build", function(done) {
     "clean",
     "copy",
     "style",
-    "minify",
     done
   );
 });

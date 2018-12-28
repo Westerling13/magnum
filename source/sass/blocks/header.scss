@@ -2,7 +2,6 @@
   width: 100%;
 }
 
-
 .header__top-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -10,12 +9,13 @@
   width: 100%;
 
   background-color: #f6f6f6;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .header__top-bar {
   display: flex;
   width: $min-width;
-  padding: 15px 14px 11px;
+  padding: 15px 14px 10px;
 
   color: #666666;
 }
@@ -31,6 +31,8 @@
 }
 
 .header__city-link {
+  position: relative;
+
   display: block;
   margin-left: 29px;
 
@@ -38,6 +40,29 @@
 
   line-height: 16px;
   color: #666666;
+
+  transition: all 0.1s ease-in;
+
+  &:hover,
+  &:focus {
+    color: #009cff;
+
+    border-color: #009cff;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0px;
+    left: -21px;
+
+    width: 11px;
+    height: 15px;
+
+    background-image: url("../img/icon-pin-gray.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .header__nav {
@@ -49,6 +74,10 @@
   padding-left: 41px;
 
   text-align: right;
+
+  background-image: url("../img/icon-clock.png");
+  background-repeat: no-repeat;
+  background-position: 17px 1px;
 }
 
 .header__bottom-wrapper {
@@ -60,9 +89,12 @@
 
 .header__bottom-bar {
   display: flex;
-  align-items: center;
   width: $min-width;
   padding: 24px 14px 27px;
+
+  .header__column {
+    border-left : 1px solid #f6f6f6;
+  }
 }
 
 .header__logo {
@@ -70,7 +102,6 @@
   justify-content: center;
   align-items: center;
   width: 25%;
-  margin: 0;
 
   img {
     display: block;
@@ -101,6 +132,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  border-left: 1px solid #f6f6f6;
 }
 
 .header__number {
@@ -120,4 +153,8 @@
   margin-right: 45px;
   padding-left: 32px;
   padding-right: 15px;
+
+  background-image: url("../img/icon-phone.png");
+  background-repeat: no-repeat;
+  background-position: 11px 8px;
 }

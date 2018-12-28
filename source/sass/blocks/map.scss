@@ -1,0 +1,56 @@
+.map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  background-color: #d5efff;
+  background-image: url("../img/bg-map.png");
+  background-repeat: no-repeat;
+  background-position: center 193px;
+}
+
+.map__content {
+  width: $min-width;
+  padding: 40px 50px;
+}
+
+.map__title {
+  position: relative;
+
+  width: 100%;
+  margin: 0 0 38px;
+
+  font-family: $gotham;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: center;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: -29px;
+    left: 50%;
+
+    width: 164px;
+    height: 17px;
+
+    background-image: url("../img/icon-wheel-dark.png");
+    background-repeat: no-repeat;
+
+    transform: translateX(-50%);
+  }
+}
+
+.map__caption {
+  display: block;
+  width: 100%;
+  margin-bottom: 51px;
+
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}

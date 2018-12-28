@@ -11,4 +11,12 @@
 
   border: none;
   background-color: $extra-color;
+  cursor: pointer;
+
+  transition: all 0.1s ease-in;
+
+  &:hover,
+  &:focus {
+    background-color: #ff7e00;
+  }
 }

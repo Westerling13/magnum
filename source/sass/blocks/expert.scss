@@ -1,0 +1,64 @@
+.expert {
+  padding: 32px 15px 14px 29px;
+
+  background-color: #ffffff;
+}
+
+.expert__top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expert__portrait {
+  flex-shrink: 0;
+  margin: 0;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    display: block;
+  }
+}
+
+.expert__author {
+  display: block;
+  flex-grow: 1;
+  width: auto;
+  padding: 6px 0 0 25px;
+
+  font-style: normal;
+}
+
+.expert__name {
+  display: block;
+  width: 100%;
+
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 500;
+}
+
+.expert__position {
+  display: block;
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: #666666;
+}
+
+.expert__text {
+  width: auto;
+  flex-grow: 1;
+  margin: 0;
+  padding: 10px 0 19px 0;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+}
